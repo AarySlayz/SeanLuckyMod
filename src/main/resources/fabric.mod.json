@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "seanluckymod",
+	"version": "${version}",
+	"name": "SeanLuckyMod",
+	"description": "this abomination is the result of getting a 5 on ap physics 2",
+	"authors": [
+		"AarySlayz"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/seanluckymod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.aaryslayz.seanluckymod.SeanLuckyMod"
+		],
+		"fabric-datagen": [
+			"net.aaryslayz.seanluckymod.SeanLuckyModDataGenerator"
+		],
+		"client": [
+			"net.aaryslayz.seanluckymod.SeanLuckyModClient"
+		]
+	},
+	"mixins": [
+		"seanluckymod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
