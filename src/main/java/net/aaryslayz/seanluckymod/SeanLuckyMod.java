@@ -1,5 +1,6 @@
 package net.aaryslayz.seanluckymod;
 
+import net.aaryslayz.seanluckymod.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,6 +19,7 @@ public class SeanLuckyMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		ModBlocks.registerModBlocks();
 
 	}
 }
